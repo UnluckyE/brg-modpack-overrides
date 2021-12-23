@@ -17,7 +17,7 @@
 	leadOreVeinSize = 6
 	#Number of lead ore veins per chunk
 	#Range: 0 ~ 255
-	leadOreVeinCount = 6
+	leadOreVeinCount = 8
 	#Whether lead ore is enabled. Set to false to disable spawning.
 	leadEnabled = true
 	#Rarity of the lab structure. Higher numbers mean rarer structures.
