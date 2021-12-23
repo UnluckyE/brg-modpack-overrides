@@ -3,6 +3,9 @@
 	#The chance that a chunk contains a fluid reservoir
 	#Default: 0.5
 	reservoir_chance = 0.5
+	#Number of ticks between checking for pipes below pumpjack if required
+	#Default: 100
+	pipe_check_ticks = 100
 	#The Flux the Pumpjack requires each tick to pump
 	#Default: 1024
 	pumpjack_consumption = 1024
@@ -12,26 +15,23 @@
 	#Require a pumpjack to have pipes built down to Bedrock
 	#Default: false
 	req_pipes = false
-	#Number of ticks between checking for pipes below pumpjack if required
-	#Default: 100
-	pipe_check_ticks = 100
 
 [Refining]
+	#A modifier to apply to the energy costs of every Coker Tower recipe
+	#Default: 1.0
+	cokerUnit_energyModifier = 1.0
+	#A modifier to apply to the energy costs of every Sulfur Recovery Unit recipe
+	#Default: 1.0
+	hydrotreater_energyModifier = 1.0
 	#A modifier to apply to the energy costs of every Distillation Tower recipe
 	#Default: 1.0
 	distillationTower_energyModifier = 1.0
 	#A modifier to apply to the time of every Distillation recipe. Can't be lower than 1
 	#Default: 1.0
 	distillationTower_timeModifier = 1.0
-	#A modifier to apply to the energy costs of every Coker Tower recipe
-	#Default: 1.0
-	cokerUnit_energyModifier = 1.0
 	#A modifier to apply to the time of every Coker recipe. Can't be lower than 1
 	#Default: 1.0
 	cokerUnit_timeModifier = 1.0
-	#A modifier to apply to the energy costs of every Sulfur Recovery Unit recipe
-	#Default: 1.0
-	hydrotreater_energyModifier = 1.0
 	#A modifier to apply to the time of every Sulfur Recovery Unit recipe. Can't be lower than 1
 	#Default: 1.0
 	hydrotreater_timeModifier = 1.0
