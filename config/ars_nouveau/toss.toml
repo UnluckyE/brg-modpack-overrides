@@ -13,5 +13,5 @@
 	#Is Starter Glyph?
 	starter = false
 	#Is Enabled?
-	enabled = true
+	enabled = false
 
