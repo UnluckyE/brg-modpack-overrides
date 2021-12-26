@@ -51,7 +51,7 @@
 	Gravisand = true
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
+	"Pistons Move Tile Entities" = false
 	"Feeding Trough" = true
 
 	[automation.dispensers_place_blocks]
@@ -226,9 +226,9 @@
 
 [management]
 	"Chests In Boats" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Shulker Box Right Click" = true
-	"Hotbar Changer" = true
+	"Hotbar Changer" = false
 	"Item Sharing" = true
 	"Right Click Armor" = true
 	"Easy Transfering" = true
@@ -442,7 +442,7 @@
 		#Allowed values: (0,)
 		"Afk Time" = 2400
 		#Allowed values: (0,1]
-		"Percent Req" = 1.0
+		"Percent Req" = 0.5
 
 	[tweaks.emotes]
 		#The enabled default emotes. Remove from this list to disable them. You can also re-order them, if you feel like it.
@@ -578,9 +578,9 @@
 
 	[world.speleothems]
 		"Tries Per Chunk In Nether" = 4
-		"Speleothems Per Chunk In Nether" = 12
+		"Speleothems Per Chunk In Nether" = 10
 		"Small Speleothems Increase Fall Damage" = true
-		"Speleothems Per Chunk" = 12
+		"Speleothems Per Chunk" = 10
 		"Max Ylevel" = 55
 		"Tries Per Chunk" = 60
 
@@ -724,7 +724,7 @@
 			"Is Blacklist" = false
 
 	[world.new_stone_types]
-		"Enable Marble" = true
+		"Enable Marble" = false
 		"Enable Myalite" = true
 		"Enable Jasper" = true
 		"Enable Voidstone" = true
@@ -1123,7 +1123,7 @@
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			#Allowed values: [0,255]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
@@ -1566,7 +1566,7 @@
 	[world.big_dungeon]
 		"Loot Table" = "minecraft:chests/simple_dungeon"
 		#The chance that a big dungeon spawn candidate will be allowed to spawn. 0.2 is 20%, which is the same as the Pillager Outpost.
-		"Spawn Chance" = 0.1
+		"Spawn Chance" = 0.8
 		"Max Rooms" = 10
 		"Chest Chance" = 0.5
 
@@ -1843,7 +1843,7 @@
 
 		[mobs.frogs.spawn_config]
 			#Allowed values: (0,)
-			"Spawn Weight" = 40
+			"Spawn Weight" = 30
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)
@@ -1871,7 +1871,7 @@
 	"Improved Tooltips" = true
 	"Improved Mount Hud" = true
 	"Usage Ticker" = true
-	"Auto Walk Keybind" = true
+	"Auto Walk Keybind" = false
 	"Chest Searching" = true
 
 	[client.usage_ticker]
@@ -1929,9 +1929,9 @@
 	"Totem Of Holding" = true
 	Backpack = true
 	Crate = true
-	"Matrix Enchanting" = true
+	"Matrix Enchanting" = false
 	Magnets = true
-	Pipes = true
+	Pipes = false
 
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
