@@ -16,7 +16,7 @@
 		#Replaces the default look controller with a version featuring cached tan math improving performance. Only works on vanilla style mobs, if a mod overrides the look controller it will skip.
 		replace_look_controller = true
 		#Remove the look at random position AI task. This will cause AIs to feel a little lifeless as they do not animate head movement while idle.
-		remove_look_random = false
+		remove_look_random = true
 
 	#Chicken
 	[entity.chicken]
