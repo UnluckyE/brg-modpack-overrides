@@ -15,8 +15,9 @@
       "dimension": "minecraft:overworld",
         "mob": "ars_nouveau:dummy",
         "mincount": {
-            "amount": 5,
-            "mob": "ars_nouveau:dummy"
+            "amount": 4,
+            "mob": "ars_nouveau:dummy",
+            "perplayer": true
         },
         "onjoin": true,
         "result": "deny"
