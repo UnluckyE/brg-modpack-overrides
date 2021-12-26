@@ -226,18 +226,18 @@
 
 [management]
 	"Chests In Boats" = true
-	"Inventory Sorting" = false
+	"Inventory Sorting" = true
 	"Shulker Box Right Click" = true
 	"Hotbar Changer" = false
 	"Item Sharing" = true
 	"Right Click Armor" = true
-	"Easy Transfering" = true
+	"Easy Transfering" = false
 
 	[management.inventory_sorting]
 		#Play a click when sorting inventories using keybindings
 		"Satisfying Click" = true
 		"Enable Chests" = true
-		"Enable Player Inventory In Chests" = true
+		"Enable Player Inventory In Chests" = false
 		"Enable Player Inventory" = true
 
 	[management.easy_transfering]
@@ -1566,7 +1566,7 @@
 	[world.big_dungeon]
 		"Loot Table" = "minecraft:chests/simple_dungeon"
 		#The chance that a big dungeon spawn candidate will be allowed to spawn. 0.2 is 20%, which is the same as the Pillager Outpost.
-		"Spawn Chance" = 0.8
+		"Spawn Chance" = 0.6
 		"Max Rooms" = 10
 		"Chest Chance" = 0.5
 
