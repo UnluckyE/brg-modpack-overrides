@@ -14,10 +14,10 @@
 		[tools_and_abilities.wrought_helm.armor_config]
 			#See official Minecraft Wiki for an explanation of how armor damage reduction works.
 			#Range: > 0
-			damage_reduction = 2
+			damage_reduction = 3
 			#See official Minecraft Wiki for an explanation of how armor toughness works.
 			#Range: 0.0 ~ 1.7976931348623157E308
-			toughness = 0.0
+			toughness = 2.0
 
 	[tools_and_abilities.suns_blessing]
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -95,7 +95,7 @@
 		[tools_and_abilities.axe_of_a_thousand_metals.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 9.0
+			attack_damage = 10.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1.7976931348623157E308
 			attack_speed = 0.8999999761581421
@@ -218,7 +218,7 @@
 			#Smaller number causes more generation, -1 to disable generation
 			#Maximum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_distance = 25
+			generation_distance = 20
 			#Maximum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
 			height_max = 100.0
@@ -326,7 +326,7 @@
 			#Smaller number causes more generation, -1 to disable generation
 			#Maximum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_distance = 25
+			generation_distance = 20
 			#Maximum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
 			height_max = 100.0
@@ -532,13 +532,13 @@
 			#Smaller number causes more generation, -1 to disable generation
 			#Minimum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_separation = 5
+			generation_separation = 4
 			#Names of structures this mob/structure will avoid when generating
 			avoid_structures = []
 			#Smaller number causes more generation, -1 to disable generation
 			#Maximum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_distance = 15
+			generation_distance = 12
 			#Maximum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
 			height_max = 55.0

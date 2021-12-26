@@ -98,7 +98,7 @@
 		# The average number of chunks between adjacent Spider Dungeons.
 		# This controls how often Spider Dungeons spawn. Higher value = more rare.
 		# Default: 44
-		"Spider Dungeon Average Separation Distance" = 44
+		"Spider Dungeon Average Separation Distance" = 48
 		# Whether or not Spider Dungeons from Better Dungeons should spawn.
 		# Default: true
 		"Spawn Spider Dungeons" = true

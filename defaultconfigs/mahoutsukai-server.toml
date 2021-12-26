@@ -1,3 +1,4 @@
+
 [boundary]
 	#This is how often the boundary drains mana
 	#Range: 0 ~ 100000000
@@ -182,7 +183,7 @@
 	RHONGOMYNIAD_MAX_SMITES = 10
 	#If you have dimension conflicts, change this to something else
 	#Range: -1000000 ~ 100000000
-	MARBLE_DIMENSION = 0
+	MARBLE_DIMENSION = -1
 	#Caliburn Smite and Morgan Ball Mana Cost
 	#Range: 0 ~ 100000000
 	CALIBURN_MORGAN_ABILITY_MANA_COST = 300
@@ -190,13 +191,13 @@
 	#Range: -1.0E7 ~ 1.0E7
 	REPLICA_TELEPORT_MAX_DISTANCE = -1.0
 	#Power Consolidation Damage Cap Tiers
-	POWER_CONSOLIDATION_TIERS = [40.0, 50.0, 60.0, 69.42, 420.69]
+	POWER_CONSOLIDATION_TIERS = [50.0, 60.0, 69.42, 420.69]
 	#Rhongomyniad Range
 	#Range: 0 ~ 10000000
 	RHONGOMYNIAD_RANGE = 20
 	#Replica Shockwave Max Damage
 	#Range: 0.0 ~ 1.0E7
-	REPLICA_MAX_DAMAGE = 69.42
+	REPLICA_MAX_DAMAGE = 60.0
 	#This is the cost per AOE projectile when using the gauntlet
 	#Range: 0 ~ 100000000
 	TREASURY_PROJECTION_AOE_MANA_COST = 120
@@ -210,7 +211,7 @@
 	REPLICA_DISABLED = false
 	#This is the cooldown between chain spawns
 	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_CHAINS_COOLDOWN = 20
+	TREASURY_PROJECTION_CHAINS_COOLDOWN = 10
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	TREASURY_PROJECTION_SCROLL_MANA_COST = 1000
@@ -265,7 +266,7 @@
 	TREASURY_PROJECTION_AOE_MAX_SPAWNS = 3.0
 	#Clarent Mana Per Damage
 	#Range: 0.0 ~ 1.0E7
-	CLARENT_MANA_PER_DAMAGE = 10
+	CLARENT_MANA_PER_DAMAGE = 10.0
 	#This is the wind up time each projectile has before firing.
 	#Range: 0.0 ~ 1.0E8
 	TREASURY_PROJECTION_SPEED = 30.0
@@ -310,7 +311,7 @@
 	PROJECTION_BLACKLIST = []
 	#How much Clarent's stored damage decreases per tick while blocking
 	#Range: 0.0 ~ 1.0E8
-	CLARENT_DECREASE_PER_BLOCKING_TICK = 0.1
+	CLARENT_DECREASE_PER_BLOCKING_TICK = 0.02
 	#Treasury Projection AOE Mode Swords Per Spawn
 	#Range: 0.0 ~ 100000.0
 	TREASURY_PROJECTION_AOE_SWORDS_PER_SPAWN = 5.0
@@ -329,10 +330,10 @@
 	REPLICA_TELEPORT_CROSS_DIMENSION = true
 	#Nerf factor for damage stored by Clarent
 	#Range: 0.0 ~ 1.0E8
-	CLARENT_STORED_FACTOR = 0.3
+	CLARENT_STORED_FACTOR = 0.5
 	#How much durability Caliburn has.
 	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_DURABILITY = 1556
+	POWER_CONSOLIDATION_DURABILITY = 1000
 	#Treasury Projection Speed Minimum
 	#Range: 0.0 ~ 100000.0
 	TREASURY_PROJECTION_SPEED_MIN = 10.0
@@ -367,7 +368,7 @@
 	MORGAN_TRANSFORM_ENTITY_WHITELIST = ["minecraft:wolf"]
 	#How much damage Morgan gains from killing children
 	#Range: 0.0 ~ 1.0E8
-	MORGAN_CHILD_INCREASE = 0.5
+	MORGAN_CHILD_INCREASE = 1.0
 	#How much damage the wound does per hit
 	#Range: 0.0 ~ 1.0E8
 	CLARENT_WOUND_DAMAGE = 0.2
@@ -381,7 +382,7 @@
 	TREASURY_PROJECTION_ALLOW_ALL = false
 	#Clarent Durability
 	#Range: 0 ~ 100000000
-	CLARENT_DURABILITY = 1556
+	CLARENT_DURABILITY = 1500
 	#Morgan Max Ball Range
 	#Range: 0 ~ 100000000
 	MORGAN_MAX_BALL_RANGE = 15
@@ -390,7 +391,7 @@
 	REPLICA_ATTACK_MANA_COST = 30
 	#Rhongomyniad Lake Nerf Factor
 	#Range: -1.0E7 ~ 1.0E7
-	RHONGOMYNIAD_NERF_FACTOR = 0.2
+	RHONGOMYNIAD_NERF_FACTOR = 0.6
 	#Staff of Emrys Max Range
 	#Range: 0 ~ 100000000
 	EMRYS_MAX_RANGE = 22
@@ -403,7 +404,7 @@
 	MORGAN_TRANSFORM_WOLFS_ALLOWED = true
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	PROJECTION_MANA_COST = 8000
+	PROJECTION_MANA_COST = 5000
 	#This is the delay between AOE projectiles of the gauntlet
 	#Range: 0 ~ 100000000
 	TREASURY_PROJECTION_AOE_COOLDOWN = 4
@@ -417,15 +418,17 @@
 	#This is how much durability the proximity projection keys have
 	#Range: 0 ~ 100000000
 	PROXIMITY_PROJECTION_MANA_COST = 30
+	#Rhongomyniad Respects Geas And Caster Immunity
+	RHONGOMYNIAD_RESPECT_IMMUNE = false
 	#Duration for Morgan Rage ability
 	#Range: 0 ~ 100000000
 	MORGAN_RAGE_TIME = 120
 	#Max stored damage for Clarent
 	#Range: 0 ~ 100000000
-	CLARENT_ATTACK_CAP = 69.42
+	CLARENT_ATTACK_CAP = 60.0
 	#Replica Shockwave Range
 	#Range: 0.0 ~ 1.0E7
-	REPLICA_ATTACK_RANGE = 5.0
+	REPLICA_ATTACK_RANGE = 8.0
 	#Treasury Projection Cooldown Increase Per Available Sword
 	#Range: -10000.0 ~ 10000.0
 	TREASURY_PROJECTION_COOLDOWN_INCREASE_PER_SWORD = 1.0
@@ -439,20 +442,22 @@
 	STRENGTHENING_MANA_COST = 200
 	#This is a nerf factor applied to enchantments to reduce the amount of power that can be consolidated. Lower is less nerf.
 	#Range: 0.0 ~ 1.0E8
-	POWER_CONSOLIDATION_NERF_FACTOR = 0.1
+	POWER_CONSOLIDATION_NERF_FACTOR = 0.6
 	#How long Clarent's wound lasts
 	#Range: 0 ~ 100000000
 	CLARENT_WOUND_TICKS = 600
 	#Morgan Max Spike Range
 	#Range: 0 ~ 100000000
 	MORGAN_SPIKE_RANGE = 10
+	#Words which are considered unholy by Caliburn and Rhongomyniad
+	UNHOLY_WORDS = ["zomb", "vampir", "demon", "devil", "skele", "lich", "evil", "curse", "undead", "wither"]
 	#Whether the projected durability is based on max damage (false) or just flat (true)
 	PROJECTION_DURABILITY_FLAT = true
 	#Reality Marble Mob Blacklist
 	MARBLE_MOB_BLACKLIST = []
 	#How much damage Morgan gains from killing adult villagers
 	#Range: 0.0 ~ 1.0E8
-	MORGAN_ADULT_INCREASE = 0.1
+	MORGAN_ADULT_INCREASE = 0.2
 	#A list of  registry names which will be not considered for selection in Treasury Projection
 	TREASURY_PROJECTION_BLACKLIST = []
 	#Staff of Emrys Mana Per Zap
@@ -508,13 +513,13 @@
 	DAMAGE_EXCHANGE_REDUCE_TO = 1.0
 	#This is how much mana is gained or lost every cycle
 	#Range: 0 ~ 100000000
-	CHRONAL_EXCHANGE_MANA_GAIN_LOSS = 7
+	CHRONAL_EXCHANGE_MANA_GAIN_LOSS = 10
 	#This is how much durability per mana restored
 	#Range: 0 ~ 100000000
-	DURABILITY_EXCHANGE_EFFICIENCY = 4
+	DURABILITY_EXCHANGE_EFFICIENCY = 2
 	#This is the cost for each catalyst exchanged by the circle
 	#Range: 0 ~ 100000000
-	CATALYST_EXCHANGE_MANA_COST = 100
+	CATALYST_EXCHANGE_MANA_COST = 50
 	#This is how often the circle changes a layer underneath it
 	#Range: 0 ~ 100000000
 	ALCHEMICAL_EXCHANGE_BLOCK_CYCLE = 20
@@ -530,7 +535,7 @@
 	IMMUNITY_EXCHANGE_TIME = 1200
 	#This is the how much mana you get back when you're injured
 	#Range: 0 ~ 100000000
-	DAMAGE_EXCHANGE_MANA_GAIN = 5
+	DAMAGE_EXCHANGE_MANA_GAIN = 10
 	#This is a list of blocks available in the moving-fluid-class exchange.
 	ALCHEMICAL_MOVING_FLUID_CLASS = []
 	#This is a list of blocks available in the dirt-class exchange.
@@ -552,7 +557,7 @@
 	CONTRACT_BLOCK_CYCLE = 4
 	#This is how often the circle checks for catalysts on top to change
 	#Range: 0 ~ 100000000
-	CATALYST_EXCHANGE_BLOCK_CYCLE = 16
+	CATALYST_EXCHANGE_BLOCK_CYCLE = 4
 	#Damage Exchange Cap
 	#Range: 0 ~ 1000000000
 	DAMAGE_EXCHANGE_CAP = 5
@@ -560,7 +565,7 @@
 [mystic]
 	#Either a fraction of the max mana (if scaling) or a flat damage value
 	#Range: 0.0 ~ 1.0E8
-	MYSTIC_STAFF_BIG_FACTOR = 0.002
+	MYSTIC_STAFF_BIG_FACTOR = 0.005
 	#Whether Rho Aias boops all the time or just when caster sneaking
 	RHO_AIAS_SNEAK_BOOP = true
 	#This is the cost of using the scroll
@@ -569,12 +574,12 @@
 	#Blocks with higher than this resistance will not be broken. Set to 0 for no breaking. 
 	#Range: 0 ~ 100000000
 	AUTHORITY_BLOCK_RESISTANCE_LIMIT = 1
-	#Mana cost per tick for Mystic Staff Beam
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_BEAM_MANA_PER_TICK = 800
 	#Delay between firing on AOE Mode of Explosion Staff
 	#Range: 0 ~ 10000000
 	MYSTIC_STAFF_AOE_DELAY = 3
+	#Mana cost per tick for Mystic Staff Beam
+	#Range: 0 ~ 100000000
+	MYSTIC_STAFF_BEAM_MANA_PER_TICK = 500
 	#Mystic Staff World Damage
 	MYSTIC_STAFF_WORLD_DAMAGE = false
 	#Entities which Rho Aias will delete if within range
@@ -584,7 +589,7 @@
 	SPATIAL_DISORIENTATION_MANA_COST_ST = 200
 	#Damage factor for Mystic Staff Beam
 	#Range: -1.0E7 ~ 1.0E8
-	MYSTIC_STAFF_BEAM_DAMAGE_FACTOR = 0.001
+	MYSTIC_STAFF_BEAM_DAMAGE_FACTOR = 0.002
 	#Whether the damage is flat or scales with caster's 'level'
 	MYSTIC_STAFF_AOE_SCALES = true
 	#How long Rho Aias lasts
@@ -595,7 +600,7 @@
 	SPATIAL_DISORIENTATION_MANA_COST = 100
 	#Damage Acceleration Factor for Mystic Staff Beam
 	#Range: 0.0 ~ 1.0E8
-	MYSTIC_STAFF_BEAM_DAMAGE_ACCELERATION = 1.02
+	MYSTIC_STAFF_BEAM_DAMAGE_ACCELERATION = 1.1
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	DAMAGE_REPLICATION_MANA_COST = 160
@@ -613,10 +618,10 @@
 	HEAVENS_CUP_TWO_EFFECT = "poison"
 	#This is how long potion generated by the network last.
 	#Range: 0 ~ 100000000
-	HEAVENS_CUP_DURATION = 600
+	HEAVENS_CUP_DURATION = 1200
 	#This is the maximum distance between nodes for them to be counted as part of the network.
 	#Range: 0 ~ 100000000
-	HEAVENS_CUP_NETWORK_DISTANCE = 24
+	HEAVENS_CUP_NETWORK_DISTANCE = 16
 	#Logs detected entities from the kill list, for debug only
 	RHO_AIAS_KILL_DEBUG = false
 	#Either a fraction of the max mana (if scaling) or a flat damage value
@@ -628,7 +633,7 @@
 	#This is the effect that is applied when the network has multiples of 11.
 	HEAVENS_CUP_ELEVEN_EFFECT = "wither"
 	#Mystic Staff Beam Block Whitelist
-	MYSTIC_STAFF_BEAM_BLOCK_WHITELIST = []
+	MYSTIC_STAFF_BEAM_BLOCK_WHITELIST = ["minecraft:grass", "minecraft:dirt", "minecraft:stone", "minecraft:sand"]
 	#Spatial Disorientation AOE Mode Radius
 	#Range: 0.0 ~ 1.0E7
 	SPATIAL_DISORIENTATION_AOE_RADIUS = 4.0
@@ -663,7 +668,7 @@
 	MYSTIC_STAFF_SUMMON_MANA_COST = 100
 	#This is the multiplier for speed when the buff is active. Lower is slower
 	#Range: 0.0 ~ 1.0E8
-	AUTHORITY_SPEED_MULTIPLIER = 3.0
+	AUTHORITY_SPEED_MULTIPLIER = 3.2
 	#This is how long the effect lasts (in ticks)
 	#Range: 0 ~ 100000000
 	AUTHORITY_TIME = 400
@@ -700,7 +705,7 @@
 [eyes]
 	#Mana drained per soul held
 	#Range: -1.0E7 ~ 1.0E7
-	DEATH_COLLECTION_DRAIN_PER_SOUL = 5
+	DEATH_COLLECTION_DRAIN_PER_SOUL = 5.0
 	#Entities must be this close to the user's look vector to be affected
 	#Range: 0 ~ 100000000
 	MYSTIC_EYES_RANGE_FROM_LOOK_VEC = 4
@@ -731,6 +736,9 @@
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	BLACK_FLAME_MANA_COST = 300
+	#Black Flame Damage
+	#Range: -1.0E7 ~ 1.0E7
+	BLACK_FLAME_DAMAGE = 1.0
 	#Blocks and entities within this range will be ignited if the user looks at them
 	#Range: 0 ~ 100000000
 	BLACK_FLAME_RANGE_FROM_USER = 30
@@ -751,7 +759,7 @@
 	BLACK_FLAME_DEATH_AGE = 6
 	#This value is added to mana regen. It is the floor for mana added by leylines. By default, you lose 1 mana from regen for not being near a leyline.
 	#Range: -10000000 ~ 100000000
-	LEY_PUNISHMENT = 0
+	LEY_PUNISHMENT = -1
 	#If true, the dimension list is a blacklist. If false it is a whitelist.
 	LEY_BLACKLIST = true
 	#This is the cost of using the scroll
@@ -759,7 +767,7 @@
 	DEATH_COLLECTION_MANA_COST = 400
 	#Max Souls possible for Death Collection
 	#Range: -1.0E7 ~ 1.0E7
-	DEATH_COLLECTION_MAX = 3
+	DEATH_COLLECTION_MAX = 2
 	#This is how long the buff lasts
 	#Range: 0 ~ 100000000
 	MYSTIC_EYES_TIME = 600
@@ -785,7 +793,7 @@
 	LEY_FACTOR = 0.01
 	#Default revive health when triggering death collection.
 	#Range: 0.0 ~ 1.0E8
-	DEATH_COLLECTION_REVIVE_VALUE = 6.0
+	DEATH_COLLECTION_REVIVE_VALUE = 10.0
 	#How far away ley points are from each other
 	#Range: 0 ~ 100000000
 	LEY_DISTANCE = 300
@@ -869,7 +877,7 @@
 	GANDR_MANA_SCALES = true
 	#Gandr Min Damage
 	#Range: 0.0 ~ 1.0E8
-	GANDR_MIN_DAMAGE = 2.0
+	GANDR_MIN_DAMAGE = 5.0
 	#Cooldown of Fog Skill for Presence Concealment
 	#Range: 0 ~ 100000000
 	RIPPER_COOLDOWN = 800
@@ -896,7 +904,7 @@
 	GANDR_HIT_RADIUS = 6.0
 	#Ripper Attack Bonus From Behind
 	#Range: 0.0 ~ 1000000.0
-	RIPPER_DAMAGE_BONUS_FROM_BEHIND = 3.0
+	RIPPER_DAMAGE_BONUS_FROM_BEHIND = 6.0
 	#Rule Breaker Item Whitelist
 	RULE_BREAKER_ITEM_WHITELIST = ["minecraft:chorus_fruit"]
 	#Geas Max Mana Regen
@@ -925,7 +933,7 @@
 	FALLEN_DOWN_RADIUS = 30
 	#Gandr Damage Factor
 	#Range: 0.0 ~ 1.0E8
-	GANDR_DAMAGE_FACTOR = 0.004
+	GANDR_DAMAGE_FACTOR = 0.009999999776482582
 	#Fallen Down Beam Growth
 	#Range: 0.0 ~ 1.0E9
 	FALLEN_DOWN_BEAM_GROWTH = 0.12
@@ -952,7 +960,7 @@
 	GANDR_MANA_COST_FACTOR = 0.05
 	#Geas Mana Regen
 	#Range: 0.0 ~ 1.0E8
-	MANA_REGEN_PER_GEAS = 2
+	MANA_REGEN_PER_GEAS = 3.0
 	#Gandr Black Particles Spawned on Hit
 	#Range: 0 ~ 100000000
 	GANDR_BLACK_PARTICLES_HIT = 150
@@ -1057,7 +1065,7 @@
 	ATTUNED_DIAMOND_CAPACITY = 2000
 	#Percentage of max mana players get back by sleeping
 	#Range: 0.0 ~ 1.0E8
-	MANA_RECOVERY_SLEEP = 0.4
+	MANA_RECOVERY_SLEEP = 0.5
 	#mahoutsukai.config.magic_runes.comment
 	MAGIC_RUNES = []
 	#The block range value for any spells which use the player's line of sight
@@ -1091,6 +1099,9 @@
 	MANA_CIRCUIT_CAPACITY = 20000
 	#Should magic damage the player
 	MAGIC_DAMAGES_PLAYER = false
+	#Punishment factor for mana increase based on current max
+	#Range: -1.0E7 ~ 1.0E7
+	MANA_INCREASE_PUNISHMENT_FACTOR = 0.0
 	#GameStages Enabled
 	GAMESTAGES_ENABLED = false
 	#How much this circuit can hold
@@ -1103,9 +1114,16 @@
 	CREATIVE_MODE_SPELLS = false
 	#If true, only allow blood circles on solid blocks
 	BLOOD_CIRCLE_SOLID_ONLY = true
+	#Apply logarithmic punishment to mana increase based on current max
+	MANA_INCREASE_LOG_PUNISHMENT = false
+	#Armor Stands are immune to spells
+	ARMOR_STANDS_IMMUNE = true
 	#How far away things can be from a Mana Circuit to use it
 	#Range: 0 ~ 100000000
 	MANA_CIRCUIT_RANGE = 10
+	#Fog Projector Max Radius
+	#Range: -1.0E7 ~ 1.0E7
+	FOG_PROJECTOR_MAX_RADIUS = 30.0
 	#Spell Creation Blacklist
 	SPELL_BLACKLIST = []
 	#mahoutsukai.config.creative_mana.comment
@@ -1124,3 +1142,4 @@
 	#How much mana players regen per tick
 	#Range: 0 ~ 100000000
 	MANA_REGEN_PER_TICK = 1
+
