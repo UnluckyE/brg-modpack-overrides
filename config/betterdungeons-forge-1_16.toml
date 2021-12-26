@@ -52,7 +52,7 @@
 		# Default: "[minecraft:overworld]"
 		"Zombie Dungeon Whitelisted Dimensions" = "[minecraft:overworld]"
 		# Whether or not Zombie Dungeons from Better Dungeons should spawn.
-		# Default: true
+		# Default: false
 		"Spawn Zombie Dungeons" = true
 		# The average number of chunks between adjacent Zombie Dungeons.
 		# This controls how often Zombie Dungeons spawn. Higher value = more rare.
@@ -101,7 +101,7 @@
 		"Spider Dungeon Average Separation Distance" = 48
 		# Whether or not Spider Dungeons from Better Dungeons should spawn.
 		# Default: true
-		"Spawn Spider Dungeons" = true
+		"Spawn Spider Dungeons" = false
 		# Whether or not Cobbedstone from Quark should be used when generating Spider Caves, if Quark is installed.
 		# If Quark is not installed, this setting has no effect.
 		# Default: true
