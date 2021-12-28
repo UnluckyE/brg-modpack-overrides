@@ -1,1 +1,8 @@
-[]
+[
+    {
+    "name": "after5",
+    "conditions": {
+        "mindaycount": 5
+    }
+  }
+]

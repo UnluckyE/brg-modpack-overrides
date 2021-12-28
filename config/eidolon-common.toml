@@ -22,7 +22,7 @@
 	leadEnabled = true
 	#Rarity of the lab structure. Higher numbers mean rarer structures.
 	#Range: 1.0 ~ 1000.0
-	labRarity = 5.0
+	labRarity = 3.0
 	#Rarity of the stray tower structure. Higher numbers mean rarer structures.
 	#Range: 1.0 ~ 1000.0
 	strayTowerRarity = 4.0
